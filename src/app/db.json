@@ -16,19 +16,19 @@
       "message": "javascript is..."
     },
     {
-      "id": "3aba",
+      "id": "bc2c",
       "title": "react",
-      "message": "react ..."
+      "message": "react is ..."
     },
     {
-      "id": "999b",
+      "id": "daf0",
       "title": "vue",
-      "message": "vue ...."
+      "message": "vue ..."
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
       "postId": 1
     }
