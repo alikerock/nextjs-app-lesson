@@ -1,10 +1,12 @@
 export default async function Read({params}) {
   const {id} = await params;
-  console.log('Read 페이지 실행');
+  const res = await fetch(`http://localhost:9999/topics/${id}`);
+  const topic = await res.json(); //json->object
+  console.log(topic);
   return (
     <>
-      <h2>Read</h2>
-      Parameter:{id}
+      <h2>{topic.title}</h2>
+      <p>{topic.message}</p>
     </>
   );
 }

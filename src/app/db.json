@@ -1,6 +1,20 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    "topics":[    
+    {
+      "id": "1",
+      "title": "html",
+      "message": "html is..."
+    },
+    {
+      "id": "2",
+      "title": "css",
+      "message": "css is..."
+    },
+    {
+      "id": "3",
+      "title": "javascript",
+      "message": "javascript is..."
+    }
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 }
