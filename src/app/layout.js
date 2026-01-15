@@ -1,6 +1,7 @@
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
+// import Script from 'next/script';
 
 export const metadata = {
   title: "Web tutorials",
@@ -10,11 +11,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   console.log('공통 레이아웃 실행');
   return (
+    <>
+    {/* <Script src="/main.js" strategy='afterInteractive'/> */}
+      
     <html lang="en">
       <body>        
         <nav className="navbar bg-light">
           <div className="container">
-            <h1>
+            <h1 className="logo">
               <Link href="/" className="navbar-brand">WEB</Link>
             </h1>
             <ul className="nav">
@@ -38,5 +42,6 @@ export default function RootLayout({ children }) {
         </main>
         </body>
     </html>
+    </>
   );
 }
