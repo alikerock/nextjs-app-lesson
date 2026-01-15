@@ -8,6 +8,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  console.log('공통 레이아웃 실행');
   return (
     <html lang="en">
       <body>        
