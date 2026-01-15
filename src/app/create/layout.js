@@ -1,7 +1,10 @@
+// import './create.module.css';
+import styles from './create.module.css';
+
 export default function Layout({children}){
   return(
     <>
-    <h2>Create Form</h2>
+    <h2 className={styles.title}>Create Form</h2>
     {children}
     </>
   )
