@@ -18,6 +18,7 @@ export default function Create() {
     .then(res=>res.json())
     .then(result=>{      
       router.push(`/read/${result.id}`);
+      router.refresh(); //페이지 이동후 새로고침
     });
   }
 
