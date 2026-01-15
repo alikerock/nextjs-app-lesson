@@ -21,7 +21,7 @@ export default async function RootLayout({ children }) {
     .then(result=>setTopics(result));    
   },[]); //최초 한번 실행
   */
-  const res = await fetch(`http://localhost:9999/topics`);
+  const res = await fetch(`http://localhost:9999/topics`,{ next: { revalidate: 0 } });
   const topics = await res.json(); //json->object
 
   return (
