@@ -14,19 +14,9 @@
       "id": "3",
       "title": "javascript",
       "message": "javascript is..."
-    },
-    {
-      "id": "bc2c",
-      "title": "react",
-      "message": "react is ..."
-    },
-    {
-      "id": "daf0",
-      "title": "vue",
-      "message": "vue ..."
     }
   ],
-  "loadmap":[
+  "loadmap": [
     {
       "id": "1",
       "title": "1. 기초",
