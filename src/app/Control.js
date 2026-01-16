@@ -9,10 +9,13 @@ export default function Control() {
   const router = useRouter();
 
   const handleDelete = ()=>{
+    const ok = window.confirm('정말 삭제할까요?');
+    if(!ok) return;
+    
     const options = {
       method:'DELETE'     
     }
-    fetch(`http://localhost:9999/topics/${id}`, options)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/topics/${id}`, options)
     .then(res=>res.json())
     .then(()=>{
       router.push('/');//삭제후 홈으로 이동
