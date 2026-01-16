@@ -32,7 +32,8 @@ export default function Update() {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/topics/${id}`, options)
       .then(res => res.json())
       .then(result => {
-        router.push(`/read/${result.id}`);        
+        router.push(`/read/${result.id}`); 
+        router.refresh();       
       });
   }
 
